@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+.calculator {
+    height: 750px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 1px 5px black;
+    background-color: rgba(0, 0, 0, 0.91);
+}
+
+.calculator__display {
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+
+.calculator__display p {
+    text-align: end;
+    position: relative;
+    top: 100px;
+    right: 30px;
+    font-size: 70px;
+    font-weight: bold;
+    border: 3px black;
+}
+
+.calculator__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    gap: 10px;
+    justify-items: center;
+}
+
+.calculator__buttons button {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(130, 129, 129, 0.829);
+    color: white;
+    filter: brightness(80%);
+}
+
+.calculator__buttons button:hover {
+    filter: brightness(100%);
+}
+
+.btn.zero{
+    width: 100%;
+    grid-area: zero;
+    border-radius: 30px;
+}
+
+.btn.light-grey {
+    background-color: lightgray;
+    color: black;
+}
+
+.btn.orange {
+    background-color: orange;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        height: 100%;
+    }
+    .calculator__buttons button {
+        width: 100%;
+        height: 100%;
+    }
+}

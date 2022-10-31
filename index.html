@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <div class="calculator__display">
+            <p id="result"></p>
+        </div>
+        <div class="calculator__buttons">
+            <button class="btn ac light-grey" id="AC" onclick="Clear()">AC</button>
+            <button class="btn plus-minus light-grey" id="plus-minus">+/-</button>
+            <button class="btn percent light-grey" id="percent">%</button>
+            <button class="btn division orange" id="division" onclick="press('/')">/</button>
+            <button class="btn seven" id="num" onclick="press('7')">7</button>
+            <button class="btn eight" id="num" onclick="press('8')">8</button>
+            <button class="btn nine" id="num" onclick="press('9')">9</button>
+            <button class="btn myltiply orange" id="myltiply" onclick="press('*')">X</button>
+            <button class="btn four" id="num" onclick="press('4')">4</button>
+            <button class="btn five" id="num" onclick="press('5')">5</button>
+            <button class="btn six" id="num" onclick="press('6')">6</button>
+            <button class="btn minus orange" id="minus" onclick="press('-')">-</button>
+            <button class="btn one" id="num" onclick="press('1')">1</button>
+            <button class="btn two" id="num" onclick="press('2')">2</button>
+            <button class="btn three" id="num" onclick="press('3')">3</button>
+            <button class="btn plus orange" id="plus" onclick="press('+')">+</button>
+            <button class="btn zero" id="num" onclick="press('0')">0</button>
+            <button class="btn dot" id="dot">,</button>
+            <button class="btn equal orange" id="equal" onclick="calc()">=</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
